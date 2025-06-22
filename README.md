@@ -1,29 +1,11 @@
-# Every SSN
+# Every Password
 
-A searchable list of every SSN, just in case you've forgotten one and need to look it up.
+This is a LEAK of Three hundred forty-seven novemdecillion, two hundred twenty-six octodecillion, four hundred fifty-three septendecillion, seven hundred thirty-seven sexdecillion, four hundred forty-five quindecillion, eighty-two quattuordecillion, seven hundred eighteen tredecillion, two hundred nine duodecillion, four hundred fifty-eight undecillion, four hundred sixty-six decillion, six hundred seventeen nonillion, nine hundred seventy-seven octillion, five hundred twenty-eight septillion, eighty-nine sextillion, eight hundred eighty-seven quintillion, six hundred forty quadrillion, four hundred forty-nine trillion, four hundred thirty-eight billion, two hundred one million, five hundred nine thousand, nine hundred ninety-nine passwords.
 
-## What is an SSN
+Your password is in there, guaranteed! 
 
-Almost one hundred years ago, the U.S. government created the Social Security Number (SSN) for the sole purpose of tracking the earnings histories of workers.
+Note this is all client-side, the passwords you search for are never sent to any server. The app works offline, after you load it. 
 
-This ultimately was widely considered as a bad move, as it was used for purposes far beyond its original intent.
-
-## What Can I do with an SSN
-
-If someone obtains your SSN with other PII, they can commit identity theft and credit card fraud (including opening credit card accounts in your name).
-
-## Are SSNs handled securely?
-
-No. They are unnecessarily requested, and improperly stored, including written on the back of napkins and sometimes emails en masse to wrong recipients. 
-
-## How is an SSN formatted
-
-- The first three digits are the area number
-- The next two digits are the group number
-- The final four digits are the serial number
-
-This changed in 2011 when SSNs started being randomized, regardless of the issuing state.
-
-## This project was forked from Every UUID
+## This project was forked from Every SSN which is forked from Every UUID
 
 This is forked from the really cool project that is [everyuuid.com](https://everyuuid.com) which solved all the hard problems to make this happen. 

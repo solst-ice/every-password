@@ -1,8 +1,8 @@
 {
-  "name": "every-ssn",
+  "name": "every-password",
   "version": "1.0.0",
-  "homepage": "https://every-ssn.com/",
-  "description": "in case I forget one",
+  "homepage": "https://solst-ice.github.io/every-password/",
+  "description": "A searchable list of every possible password, just in case you need to look one up",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
