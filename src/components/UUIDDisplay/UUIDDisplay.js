@@ -9,7 +9,6 @@ import {
   WIDTH_TO_SHOW_DOUBLE_HEIGHT,
 } from "../../../lib/constants";
 import { ClipboardCopy, Star } from "../Icons";
-import { getStateFromAreaNumber } from "../../../lib/stateMapping";
 
 const BaseButton = styled(UnstyledButton)`
   height: 100%;
@@ -234,7 +233,7 @@ const Colon = styled.span`
 
 const UUID = styled.span`
   grid-area: uuid;
-  color: var(--uuid-color);
+  color: var(--password-color);
   display: block;
   width: fit-content;
 
@@ -279,9 +278,8 @@ function Row({
   const [justCopied, setJustCopied] = React.useState(0);
   const timeoutRef = React.useRef(null);
 
-  // Get area number from SSN
-  const areaNumber = parseInt(uuid.split('-')[0], 10);
-  const state = getStateFromAreaNumber(areaNumber);
+  // Get password length for display
+  const passwordLength = uuid.length;
 
   const handleCopy = React.useCallback(async () => {
     clearTimeout(timeoutRef.current);
@@ -353,7 +351,7 @@ function Row({
       </IndexWithPadding>
       <Colon style={{ marginRight: "1rem" }} />
       <UUID style={{ marginRight: "1rem" }}>{UUIDToDisplay}</UUID>
-      <State style={{ width: "200px" }}>{state || 'No state found'}</State>
+      <State style={{ width: "200px" }}>{passwordLength} chars</State>
       <CopyButton onClick={handleCopy} $rowMouseDown={mouseDown}>
         <ClipboardCopy style={{ height: "100%", aspectRatio: 1 }} />
       </CopyButton>

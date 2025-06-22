@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../Header/Header";
 import Scrollbar from "../Scrollbar/Scrollbar";
-import { MAX_UUID } from "../../../lib/constants";
+import { MAX_PASSWORD } from "../../../lib/constants";
 import UUIDDisplay from "../UUIDDisplay/UUIDDisplay";
 import SearchWidget from "../SearchWidget/SearchWidget";
 import FavoritesWidget from "../FavoritesWidget";
@@ -67,7 +67,7 @@ function App() {
         return favedUUIDsLength - itemsToShowBig;
       }
       return 0n;
-    } else return MAX_UUID - BigInt(itemsToShow);
+    } else return MAX_PASSWORD - BigInt(itemsToShow);
   }, [itemsToShow, showFavorites, favedUUIDs]);
 
   const toggleFavedUUID = (uuid) => {
@@ -169,7 +169,7 @@ function App() {
       if (index < 0n) {
         return null;
       }
-      if (index > MAX_UUID) {
+      if (index > MAX_PASSWORD) {
         return null;
       }
       const uuid = indexToUUID(index);

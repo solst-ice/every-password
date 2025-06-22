@@ -61,7 +61,7 @@ body {
   color: var(--neutral-900);
 
   --border-color: var(--slate-400);
-  --uuid-color: var(--neutral-900);
+  --password-color: var(--neutral-900);
 
   background-color: var(--slate-300);
 }

@@ -6,13 +6,10 @@ import {
 } from "../../../lib/constants";
 import { Code, Twitter, Help } from "../Icons/Icons";
 const SUBHEADS = [
-  "In case you forgot one",
+  "In case you forgot yours",
   "Scroll till you find a good one",
-  "Pick a random one you like",
   "Yours is in here somewhere",
   "Find your neighbor's",
-  "Shopping for a new one?",
-  "Tweet your favorite one",
 ];
 
 const Wrapper = styled.header`
@@ -128,13 +125,13 @@ function Header() {
     <Wrapper>
       <TitleSubhead>
         <TitleLink href="/">
-          <Title>Every SSN, Leaked!</Title>
+          <Title>Every Password, Leaked!</Title>
         </TitleLink>
         <Subhead>{subhead}</Subhead>
       </TitleSubhead>
       <SelfPromotion>
         <Socials>
-          <SocialLink href="https://github.com/solst-ice/every-ssn?tab=readme-ov-file#every-ssn">
+          <SocialLink href="https://github.com/solst-ice/every-password">
             <Help />
           </SocialLink>
           <SocialLink href="https://twitter.com/IceSolst">
